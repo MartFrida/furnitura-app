@@ -1,37 +1,23 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import Backend from "i18next-xhr-backend"; // Подключаем Backend для загрузки переводов
-
-// // Імпортуємо файли локалізації
-// import translationEN from "./locales/english.json";
-// import translationES from "./locales/español.json";
-// import translationFR from "./locales/français.json";
-// import translationCAT from "./locales/català.json";
-// import translationDE from "./locales/deutsch.json";
-// import translationIT from "./locales/italiano.json";
-
-// const resources = {
-//   english: { translation: translationEN },
-//   español: { translation: translationES },
-//   français: { translation: translationFR },
-//   català: { translation: translationCAT },
-//   deutsch: { translation: translationDE },
-//   italiano: { translation: translationIT },
-// };
+import Backend from "i18next-http-backend"; // Подключаем Backend для загрузки переводов
 
 i18n
-  .use(initReactI18next)
   .use(Backend) // Загрузка переводов с сервера
-  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    backend: {
-      loadPath: "/locales/{{lng}}/translation.json", // Путь к файлам перевода
+    fallbackLng: "en", // Язык по умолчанию
+    debug: true, // Включите отладку при необходимости
+    interpolation: {
+      escapeValue: false, // Отключаем экранирование HTML
     },
-    fallbackLng: "en",
-    interpolation: { escapeValue: false },
-    react: {
-      useSuspense: false, // Для React 18 и выше
+    supportedLngs: ["en", "ua"], // Список поддерживаемых языков
+    backend: {
+      loadPath: "/locales/{{lng}}/translation.json", // Указываем путь к файлам перевода
+    },
+    detection: {
+      order: ["querystring", "localStorage", "navigator"], // Определение языка
+      caches: ["localStorage"], // Кэширование выбора языка
     },
   });
 

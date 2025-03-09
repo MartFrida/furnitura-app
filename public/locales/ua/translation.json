@@ -4,7 +4,8 @@
   "menu": {
     "home": "Inicio",
     "about": "Sobre Nosotros",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "products": "Products"
   },
   "form": {
     "email": "Correo electrónico",

@@ -1,7 +1,5 @@
-import heroImg from '../../public/images/main.jpg'
-// import heroPicture from '../assets/hero-dragon3.png'
+import heroImg from '/images/main.jpg'
 import { useTranslation } from "react-i18next";
-
 
 const Hero = () => {
   const { t } = useTranslation();

@@ -34,6 +34,7 @@ const Navbar = () => {
           <img src="/logo.png" alt="Logo" className="h-10 w-auto" /></a>
         <ul className="flex space-x-4">
           <li><a href="/about" className="text-white hover:text-gray-400">{t("menu.about")}</a></li>
+          <li><a href="/products" className="text-white hover:text-gray-400">{t("menu.products")}</a></li>
           <li><a href="/contact" className="text-white hover:text-gray-400">{t("menu.contact")}</a></li>
         </ul>
         <LanguageSelector />
@@ -43,6 +44,7 @@ const Navbar = () => {
         <a href="/" className="text-white text-2xl font-bold"><img src="/logo.png" alt="Logo" className="h-16 w-auto" /></a>
         <ul className="flex space-x-4">
           <li><a href="/about" className="text-white text-xl hover:text-gray-400">{t("menu.about")}</a></li>
+          <li><a href="/products" className="text-white text-xl hover:text-gray-400">{t("menu.products")}</a></li>
           <li><a href="/contact" className="text-white text-xl hover:text-gray-400">{t("menu.contact")}</a></li>
         </ul>
         <LanguageSelector />

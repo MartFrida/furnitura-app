@@ -4,7 +4,8 @@
   "menu": {
     "home": "Home",
     "about": "About Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "products": "Products"
   },
   "form": {
     "email": "Email",
@@ -12,8 +13,8 @@
     "submit": "Submit"
   },
   "hero": {
-    "welcome": "Welcome to the ",
-    "introduse": "Join a community of like-minded people who love to socialize, network, and create memories.",
+    "welcome": "SHOW THE BEAUTY OF YOUR HOME",
+    "introduse": "Best service, Best Quality.",
     "become": "Register"
   },
   "contacts": {
