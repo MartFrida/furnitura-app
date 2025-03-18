@@ -20,8 +20,10 @@ const MapComponent = () => {
             className="w-full h-[400px] md:h-[500px]"
             loading="lazy"
             allowFullScreen
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.2854869729144!2d2.1714774751635013!3d41.3896060712996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a370b3054a75%3A0xc3919ce2d7a6cf1b!2sSmoke%20Point!5e0!3m2!1sen!2ses!4v1738848179294!5m2!1sen!2ses"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10164.32367766653!2d30.64529975659159!3d50.4395933969529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c530c3e6c829%3A0x54b7cf233f77fa80!2sAlmatynska%20St%2C%208%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2ses!4v1742286646560!5m2!1sen!2ses"
           ></iframe>
+
+
         </div>
       </div>
     </section>

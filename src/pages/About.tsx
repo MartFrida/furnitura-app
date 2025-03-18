@@ -2,9 +2,9 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import RegisterModal from "../components/RegisterModal";
 
-const About = () => {
+const About: React.FC = () => {
   const { t } = useTranslation();
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   return (
     <section className="bg-[#0d0b26] text-white py-20 px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center">

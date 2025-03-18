@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 // import { useTranslation } from "react-i18next";
 
@@ -9,25 +9,19 @@ export default function ContactForm() {
   const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<Record<string, string>>({
     name: "",
     email: "",
     message: "",
   });
 
-  // const credentialsEmailJS = {
-  //   serviceId,
-  //   templateID,
-  //   publicKey
-  // }
+  const [status, setStatus] = useState<string>("");
 
-  const [status, setStatus] = useState("");
-
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     try {

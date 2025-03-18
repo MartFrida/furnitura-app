@@ -3,18 +3,18 @@ import { FaGlobe } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import "../i18n"; // конфігурація локалізації
 
-const LanguageSelector = () => {
+const LanguageSelector: React.FC = () => {
   const { i18n } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("english");
-  const [isMobile, setIsMobile] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedLanguage, setSelectedLanguage] = useState<string>("english");
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
 
   // Закрытие меню при клике вне него
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     };
@@ -27,13 +27,13 @@ const LanguageSelector = () => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
     setIsMobile(mediaQuery.matches);
 
-    const handleResize = () => setIsMobile(mediaQuery.matches);
+    const handleResize = (event: MediaQueryListEvent) => setIsMobile(event.matches);
     mediaQuery.addEventListener("change", handleResize);
 
     return () => mediaQuery.removeEventListener("change", handleResize);
   }, []);
 
-  const languages = ["english", "українська"];
+  const languages: string[] = ["english", "українська"];
 
   const handleLanguageChange = (language: string) => {
     setSelectedLanguage(language);

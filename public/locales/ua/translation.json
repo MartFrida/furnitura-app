@@ -1,64 +1,64 @@
 {
-  "welcome": "¡Bienvenido a nuestro club!",
-  "description": "Únete a nosotros y forma parte de la comunidad.",
+  "welcome": "Розкрий красу твого дому",
+  "description": "Найкращий сервіс. Найкраща якість",
   "menu": {
-    "home": "Inicio",
-    "about": "Sobre Nosotros",
-    "contact": "Contacto",
-    "products": "Products"
+    "home": "Головна",
+    "about": "Про нас",
+    "contact": "Контакти",
+    "products": "Послуги"
   },
   "form": {
-    "email": "Correo electrónico",
-    "placeholder": "Introduce tu correo electrónico",
-    "submit": "Enviar"
+    "email": "Електронна пошта",
+    "placeholder": "Введіть вашу електронну пошту",
+    "submit": "Надіслати"
   },
   "hero": {
-    "welcome": "Bienvenido a ",
-    "introduse": "Únete a una comunidad de personas con ideas afines que aman socializar, hacer networking y crear recuerdos.",
-    "become": "Registro"
+    "welcome": "Ласкаво просимо до ",
+    "introduse": "Приєднуйтесь до спільноти однодумців, які люблять спілкуватися, налагоджувати зв’язки та створювати незабутні спогади.",
+    "become": "Реєстрація"
   },
   "contacts": {
-    "location": "Nuestra ubicación",
-    "title": "Contáctanos",
-    "description": "¡Estamos en pleno centro de la ciudad! Encuéntranos en el mapa a continuación.",
-    "open": "Abierto todos los días de 10:00 a. m. a 10:00 p. m.",
-    "reach": "Ponte en contacto con nosotros para consultas sobre membresía, detalles de eventos o preguntas generales.",
-    "hours-title": "Horario de Apertura",
+    "location": "Наше розташування",
+    "title": "Зв'яжіться з нами",
+    "description": "Ми знаходимося в самому центрі міста! Знайдіть нас на карті нижче.",
+    "open": "Відчинено щодня з 10:00 до 22:00.",
+    "reach": "Зв'яжіться з нами щодо питань членства, деталей заходів або загальних запитань.",
+    "hours-title": "Розклад роботи",
     "week": {
-      "monday": "Lunes",
-      "tuesday": "Martes",
-      "wednesday": "Miércoles",
-      "thursday": "Jueves",
-      "friday": "Viernes",
-      "saturday": "Sábado",
-      "sunday": "Domingo"
+      "monday": "Понеділок",
+      "tuesday": "Вівторок",
+      "wednesday": "Середа",
+      "thursday": "Четвер",
+      "friday": "П’ятниця",
+      "saturday": "Субота",
+      "sunday": "Неділя"
     }
   },
   "faq": {
-    "title": "Preguntas Frecuentes",
-    "description": "Aquí tienes algunas preguntas comunes sobre nuestro club social.",
-    "open": "Abierto todos los días de 10:00 a. m. a 10:00 p. m.",
-    "first-title": "¿Quién puede unirse al club?",
-    "first-description": "Nuestro club está abierto a adultos (mayores de 18 o 21 años, según las leyes locales) que aprecien los productos de tabaco de calidad y las reuniones sociales. Damos la bienvenida tanto a fumadores ocasionales como a entusiastas.",
-    "second-title": "¿Dónde y cuándo se reúnen?",
-    "second-description": "Organizamos encuentros regulares en salones designados y lugares privados. Los eventos varían desde reuniones informales semanales hasta sesiones especiales de degustación. Consulta nuestro calendario de eventos para conocer las próximas fechas.",
-    "third-title": "¿Se permite la entrada a no fumadores?",
-    "third-description": "¡Por supuesto! Damos la bienvenida a cualquier persona interesada en la cultura y los aspectos sociales del tabaco, incluso si no fuma. Muchos de nuestros eventos se centran en la historia, la artesanía y la comunidad.",
-    "forth-title": "¿Qué tipo de eventos organizan?",
-    "forth-description": "Nuestro club organiza degustaciones de puros y pipas, encuentros sociales, charlas con expertos y noches temáticas. También colaboramos con marcas y salones para ofrecer experiencias exclusivas a nuestros miembros."
+    "title": "Часті запитання",
+    "description": "Ось деякі поширені питання про наш соціальний клуб.",
+    "open": "Відчинено щодня з 10:00 до 22:00.",
+    "first-title": "Хто може приєднатися до клубу?",
+    "first-description": "Наш клуб відкритий для дорослих (від 18 або 21 року залежно від місцевого законодавства), які цінують якісні тютюнові вироби та соціальні зустрічі. Ми радо вітаємо як випадкових курців, так і ентузіастів.",
+    "second-title": "Де і коли ви збираєтеся?",
+    "second-description": "Ми проводимо регулярні зустрічі у спеціально відведених салонах та приватних місцях. Події варіюються від щотижневих неформальних зустрічей до спеціальних дегустацій. Перегляньте наш календар подій, щоб дізнатися про найближчі заходи.",
+    "third-title": "Чи дозволено вхід некурцям?",
+    "third-description": "Звичайно! Ми раді вітати всіх, хто цікавиться культурою та соціальними аспектами тютюну, навіть якщо ви не курите. Багато наших заходів присвячені історії, ремеслу та спільноті.",
+    "forth-title": "Які заходи ви організовуєте?",
+    "forth-description": "Наш клуб проводить дегустації сигар та люльок, соціальні зустрічі, бесіди з експертами та тематичні вечори. Ми також співпрацюємо з брендами та салонами, щоб запропонувати ексклюзивні заходи для наших членів."
   },
-  "footer": "Club privado solo para miembros. 2025 Dragon Palace | Todos los derechos reservados.",
+  "footer": "Щоб записатися на консультацію, зателефонуйте за номером",
   "about": {
-    "title": "Dragon Palace Barcelona",
-    "introduse": "Dragon Palace Barcelona es un club social exclusivo para miembros diseñado para aquellos que aprecian una experiencia de tabaco de alta calidad en un ambiente cómodo y elegante.",
-    "description": "Idealmente situado cerca de Plaza Cataluña y Barrio Born, en el corazón de Barcelona, ​​nuestro club ofrece un espacio exclusivo y acogedor para que los miembros se relajen, se conecten y disfruten de una selección premium de productos.",
-    "why": "¿Por qué unirse a nosotros?",
+    "title": "ФОП «Гладун О.М»",
+    "introduse": "ФОП «Гладун О.М.» надає високоякісний та точний розкрій ДСП, ДВП, ОСБ та МДФ, а також виготовляє меблеві заготовки та елементи за індивідуальними розмірами, включаючи обробку кромкою ПВХ. З 2013 року компанія активно розвивається на меблевому ринку, пропонуючи клієнтам різноманітний асортимент продукції. ",
+    "description": "Ідеально розташований неподалік Площі Каталонії та району Борн у самому серці Барселони, наш клуб пропонує ексклюзивний і затишний простір для відпочинку, спілкування та насолоди преміальними продуктами.",
+    "why": "Чому варто приєднатися до нас?",
     "list": {
-      "first": "Salón moderno y acogedor con asientos cómodos",
-      "second": "Una comunidad amigable y con intereses afines",
-      "third": "Eventos exclusivos: degustaciones, reuniones sociales, entretenimiento en vivo",
-      "forth": "El ambiente perfecto para relajarse y conectar"
+      "first": "Сучасний та затишний салон із комфортними місцями для сидіння",
+      "second": "Дружня спільнота однодумців",
+      "third": "Ексклюзивні заходи: дегустації, соціальні зустрічі, живі виступи",
+      "forth": "Ідеальна атмосфера для відпочинку та спілкування"
     },
-    "join": "¡Únete a nosotros y experimenta lo mejor de la escena social del tabaco en Barcelona!"
+    "join": "Приєднуйтесь до нас і відкрийте для себе найкраще з соціальної тютюнової сцени Барселони!"
   }
 }
