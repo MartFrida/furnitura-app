@@ -20,7 +20,7 @@ const FAQSection = () => {
 
       <div className="max-w-3xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
-          <div key={index} className="bg-gray-800 p-4 rounded-lg shadow-lg">
+          <div key={index} className="bg-slate-950 p-4 rounded-lg shadow-lg">
             <button
               className="w-full flex justify-between items-center text-left font-semibold text-lg"
               onClick={() => toggleFAQ(index)}
