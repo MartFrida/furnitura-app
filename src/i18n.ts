@@ -6,7 +6,7 @@ i18n
   .use(Backend) // Загрузка переводов с сервера
   .use(initReactI18next)
   .init({
-    fallbackLng: "en", // Язык по умолчанию
+    fallbackLng: "ua", // Язык по умолчанию
     debug: true, // Включите отладку при необходимости
     interpolation: {
       escapeValue: false, // Отключаем экранирование HTML

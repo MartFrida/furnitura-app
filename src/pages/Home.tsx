@@ -1,15 +1,17 @@
-import ContactForm from "../components/ContactForm"
+// import ContactForm from "../components/ContactForm"
 import Hero from "../components/Hero"
-import MapComponent from "../components/MapComponent"
+// import MapComponent from "../components/MapComponent"
+import About from "../components/About"
 
 
 const Home = () => {
   return (
-    <>
+    <div className="gap-y-4">
       <Hero />
-      <MapComponent />
-      <ContactForm />
-    </>
+      <About />
+      {/* <MapComponent />
+      <ContactForm /> */}
+    </div>
   )
 }
 

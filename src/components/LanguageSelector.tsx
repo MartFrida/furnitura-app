@@ -46,8 +46,8 @@ const LanguageSelector: React.FC = () => {
       {/* Кнопка выбора языка */}
       <a
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-2 px-4 py-2  bg-gray-800 text-white rounded-lg 
-                   hover:bg-gray-700 transition duration-300 cursor-pointer"
+        className="flex items-center gap-2 px-4 py-2 text-white rounded-lg 
+                   transition duration-300 cursor-pointer"
       >
         <FaGlobe className="text-xl" />
         {!isMobile && <span>{selectedLanguage}</span>}
