@@ -3,9 +3,20 @@ import { useTranslation } from "react-i18next";
 // import RegisterModal from "./RegisterModal";
 import Container from "./Container";
 
+interface AboutItem {
+  title: string;
+  introduse: string;
+  description: string;
+  why: string;
+  list: string[];
+  join: string;
+}
+
 const About: React.FC = () => {
   const { t } = useTranslation();
-  // const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const abouts = t('about', { returnObjects: true }) as AboutItem;
+
+
   return (
     <>
       <Container>
@@ -25,11 +36,9 @@ const About: React.FC = () => {
 
         <h3 className="text-2xl font-semibold text-orange-400">{t("about.why")}</h3>
         <ul className="mt-4 space-y-3 text-gray-300">
-          <li>✅ {t("about.list.first")}</li>
-          <li>✅ {t("about.list.second")}</li>
-          <li>✅ {t("about.list.third")}</li>
-          <li>✅ {t("about.list.forth")}</li>
-        </ul>
+          {abouts.list.map((index, item) => (
+            <li key={index}>✅ {t(`about.list.${item}`)}</li>
+          ))}                </ul>
 
       </Container>
       <Container>
@@ -37,13 +46,6 @@ const About: React.FC = () => {
           <p className="text-lg text-gray-300 mb-4">
             {t("about.join")} ✨
           </p>
-          {/* <button
-            onClick={() => setIsModalOpen(true)}
-
-            className="bg-gradient-to-r from-green-400 to-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105 hover:brightness-110"
-          >
-            {t("hero.become")}
-          </button> */}
         </div>
 
       </Container >

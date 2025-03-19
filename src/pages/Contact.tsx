@@ -51,7 +51,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-orange-400 text-2xl" />
-              <a href="mailto:ahmadbutt.sclub@gmail.com" className="text-gray-300">ahmadbutt.sclub@gmail.com
+              <a href="mailto:furnituragladun@gmail.com" className="text-gray-300">furnituragladun@gmail.com
               </a>
             </div>
           </div>
