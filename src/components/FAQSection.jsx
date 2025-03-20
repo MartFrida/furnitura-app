@@ -15,7 +15,7 @@ const FAQSection = () => {
   return (
     <Container>
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">{t("faq.title")}</h2>
+        <h2 className="text-3xl font-bold text-amber-400 mb-6">{t("faq.title")}</h2>
       </div>
 
       <div className="max-w-3xl mx-auto space-y-4">

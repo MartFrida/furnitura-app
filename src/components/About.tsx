@@ -22,20 +22,19 @@ const About: React.FC = () => {
       <Container>
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-amber-400 animate-fadeIn">
-            🔥 {t("about.title")}
+            {t("about.title")}
           </h2>
-          <p className="text-lg text-gray-300 leading-relaxed mb-6">
+          <p className="text-lg leading-relaxed mb-6">
             {t("about.introduse")}
           </p>
-          <p className="text-lg text-gray-300 leading-relaxed mb-6">
+          <p className="text-lg leading-relaxed mb-6">
             {t("about.description")}
           </p>
         </div>
       </Container>
       <Container>
-
-        <h3 className="text-2xl font-semibold text-orange-400">{t("about.why")}</h3>
-        <ul className="mt-4 space-y-3 text-gray-300">
+        <h3 className="text-2xl font-semibold text-amber-400 text-center">{t("about.why")}</h3>
+        <ul className="mt-4 space-y-3">
           {abouts.list.map((index, item) => (
             <li key={index}>✅ {t(`about.list.${item}`)}</li>
           ))}                </ul>
@@ -43,9 +42,9 @@ const About: React.FC = () => {
       </Container>
       <Container>
         <div className="text-center mt-8">
-          <p className="text-lg text-gray-300 mb-4">
+          <h2 className="text-2xl text-gray-300 mb-4">
             {t("about.join")} ✨
-          </p>
+          </h2>
         </div>
 
       </Container >

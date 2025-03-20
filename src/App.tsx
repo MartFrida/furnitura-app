@@ -9,7 +9,7 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col bg-[url(/bg.jpg)] bg-cover bg-center bg-repeat h-auto w-screen overflow-hidden box-border">
+      <div className="flex flex-col bg-[url(/bg.jpg)] bg-fixed bg-cover bg-center bg-repeat h-auto w-screen overflow-hidden box-border">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

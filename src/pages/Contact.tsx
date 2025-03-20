@@ -1,4 +1,4 @@
-import { FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
+import { FaClock } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import Container from "../components/Container";
 import MapComponent from "../components/MapComponent";
@@ -9,18 +9,16 @@ const Contact = () => {
     <>
       <div className="h-20"></div>
       <Container >
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 text-orange-500">📍 {t("contacts.title")}</h2>
-        </div>
+        <h2 className="text-4xl mx-auto text-center font-bold mb-6 text-amber-400">📍 {t("contacts.title")}</h2>
 
         {/* Contact Info */}
-        <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className=" mx-auto flex flex-col md:flex-row  gap-8">
           <MapComponent />
 
           {/* Business Hours */}
           <div className="bg-slate-950/50 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold text-orange-400 mb-4 flex items-center gap-2">
-              <FaClock className="text-orange-400" /> {t("contacts.hours-title")}
+            <h3 className="text-2xl font-semibold  mb-4 flex items-center gap-2">
+              <FaClock /> {t("contacts.hours-title")}
             </h3>
             <ul className="space-y-2 text-gray-300">
               <li className="flex justify-between">
@@ -45,15 +43,7 @@ const Contact = () => {
                 <span>{t("contacts.week.sunday")}</span> <span>Вихідний</span>
               </li>
             </ul>
-            <div className="flex items-center gap-4">
-              <FaPhone className="text-orange-400 text-2xl" />
-              <a href="tel:+380677747431" className="text-gray-300">+38 067-774-74-31</a>
-            </div>
-            <div className="flex items-center gap-4">
-              <FaEnvelope className="text-orange-400 text-2xl" />
-              <a href="mailto:furnituragladun@gmail.com" className="text-gray-300">furnituragladun@gmail.com
-              </a>
-            </div>
+
           </div>
 
         </div>
