@@ -1,53 +1,53 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
-interface ServiceCardProps {
-  image: string;
-  title: string;
-  description: {
-    workList: string[];
-    unit: string;
-    price: string;
-    currency: string;
-  };
-}
+const data = [
+  { work: "Порізка ДСП 10-18 мм", unit: "1 м.п.", price: 11.5, currency: "грн" },
+  { work: "Порізка залишків", unit: "1 м.п.", price: 13.6, currency: "грн" },
+  { work: "Порізка ДВП", unit: "1 м.п.", price: 7.5, currency: "грн" },
+  { work: "Порізка стяжок в розмір", unit: "1 м.п.", price: 18, currency: "грн" },
+  { work: "Порізка фанери 18-22 мм", unit: "1 м.п.", price: 15, currency: "грн" },
+  { work: "Порізка фанери 25-36 мм", unit: "1 м.п.", price: 31, currency: "грн" },
+  { work: "Порізка OSB", unit: "1 м.п.", price: 13.5, currency: "грн" },
+  { work: "Порізка МДФ 4-12 мм", unit: "1 м.п.", price: 11, currency: "грн" },
+  { work: "Порізка МДФ 19 мм", unit: "1 м.п.", price: 13.5, currency: "грн" },
+  { work: "Порізка стінової панелі", unit: "1 м.п.", price: 13.5, currency: "грн" },
+];
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ image, title, description }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export default function PriceTableModal() {
+  const [open, setOpen] = useState(false);
 
   return (
-    <>
-      <div
-        className="max-w-xs bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-        onClick={() => setIsModalOpen(true)}
-      >
-        <img src={image} alt={title} className="w-full h-48 object-cover" />
-        <div className="p-4 text-center">
-          <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-        </div>
-      </div>
-
-      {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
-            <h2 className="text-xl font-bold mb-4">{title}</h2>
-            <ul className="mb-4">
-              {description.workList.map((work, index) => (
-                <li key={index} className="text-gray-700">- {work}</li>
-              ))}
-            </ul>
-            <p className="text-gray-700">Одиниці вимірювання: {description.unit}</p>
-            <p className="text-gray-700">Ціна: {description.price} {description.currency}</p>
-            <button
-              className="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
-              onClick={() => setIsModalOpen(false)}
-            >
-              Закрити
-            </button>
+    <div className="flex justify-center items-center h-screen">
+      <Button onClick={() => setOpen(true)}>Відкрити прайс</Button>
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogContent className="max-w-2xl">
+          <DialogTitle>Прайс на порізку</DialogTitle>
+          <div className="overflow-x-auto">
+            <table className="min-w-full border border-gray-300">
+              <thead>
+                <tr className="bg-gray-200">
+                  <th className="border px-4 py-2">Перелік робіт</th>
+                  <th className="border px-4 py-2">Одиниці вимірювання</th>
+                  <th className="border px-4 py-2">Ціна</th>
+                  <th className="border px-4 py-2">Валюта</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((item, index) => (
+                  <tr key={index} className="odd:bg-white even:bg-gray-100">
+                    <td className="border px-4 py-2">{item.work}</td>
+                    <td className="border px-4 py-2">{item.unit}</td>
+                    <td className="border px-4 py-2">{item.price}</td>
+                    <td className="border px-4 py-2">{item.currency}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-        </div>
-      )}
-    </>
+        </DialogContent>
+      </Dialog>
+    </div>
   );
-};
-
-export default ServiceCard;
+}
